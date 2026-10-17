@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mandao: #e8611a;
+  --color-mandao-dark: #b5452b;
+  --color-mandao-soft: #f5c4b3;
+  --color-morro: #1f6b4f;
+  --color-morro-dark: #174f3b;
+  --color-morro-soft: #9fe1cb;
+  --color-cream: #fff3e8;
+  --color-sand: #f7f2ec;
+  --color-line: #e9dccf;
+  --color-ink: #2b2724;
+  --color-ink-soft: #6b625b;
+  --color-ink-muted: #8a8073;
+  --color-sun: #fac775;
+
+  --font-sans: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.75rem;
+
+  --shadow-card: 0 1px 0 rgba(43, 39, 36, 0.06), 0 12px 32px -16px rgba(43, 39, 36, 0.25);
+  --shadow-float: 0 24px 60px -24px rgba(43, 39, 36, 0.35);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.55;
+      transform: scale(1.6);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-mandao);
+  color: var(--color-cream);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-mandao);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
