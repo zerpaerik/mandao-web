@@ -26,7 +26,7 @@ export function FinalCta() {
                 <Button href={site.app.android} variant="dark" size="lg">
                   <Smartphone size={20} /> Descargar para Android
                 </Button>
-                <Button href={whatsappLink("Hola Mandao, quiero hacer mi primer pedido.")} variant="secondary" size="lg">
+                <Button href={whatsappLink("Hola Mandaíto, quiero hacer mi primer pedido.")} variant="secondary" size="lg">
                   <MessageCircle size={20} /> Pedir por WhatsApp
                 </Button>
               </div>

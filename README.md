@@ -1,6 +1,6 @@
-# Mandao · web pública
+# Mandaíto · web pública
 
-Sitio público de **Mandao** (mandao.com.ve): delivery y mandados en San Juan de los Morros, Guárico.
+Sitio público de **Mandaíto** (mandaito.com.ve): delivery y mandados en San Juan de los Morros, Guárico.
 Construido con Next.js 16 (App Router), React 19, Tailwind CSS 4 y [Motion](https://motion.dev) para las animaciones.
 
 ## Arrancar
@@ -48,8 +48,7 @@ Regla simple: **los textos viven en `src/content`, los datos de la marca en `src
 | --- | --- |
 | Número real de WhatsApp | `src/lib/site.ts` → `whatsapp` |
 | Enlace a Google Play | `src/lib/site.ts` → `app.android` |
-| Foto de Los Morros | guardar en `public/images/morros.jpg` y poner `images.morrosPhoto: "/images/morros.jpg"` en `site.ts` |
-| Guardar los leads | `src/actions/leads.ts`: hoy valida y registra en consola; conectar a Google Sheets, Notion o el admin de Mandao |
+| Guardar los leads | `src/actions/leads.ts`: hoy valida y registra en consola; conectar a Google Sheets, Notion o el admin de Mandaíto |
 | Textos legales | `src/app/terminos` y `src/app/privacidad` son borradores |
 | RIF en el footer | `src/components/layout/SiteFooter.tsx` |
 | Imagen Open Graph | agregar `src/app/opengraph-image.tsx` |

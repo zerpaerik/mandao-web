@@ -18,7 +18,7 @@ function text(formData: FormData, key: string): string {
 /**
  * Receives merchant and rider sign-up requests from the public site.
  *
- * TODO: persist leads (Google Sheet, Notion or the Mandao admin API) and notify by WhatsApp/email.
+ * TODO: persist leads (Google Sheet, Notion or the Mandaíto admin API) and notify by WhatsApp/email.
  * For now the lead is validated and logged on the server so nothing is silently lost during the pilot.
  */
 export async function submitLead(_prev: LeadState, formData: FormData): Promise<LeadState> {

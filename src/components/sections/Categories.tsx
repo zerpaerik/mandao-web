@@ -24,7 +24,7 @@ export function Categories() {
             body="Cuatro puertas, una sola app. Y si lo que necesitas no está en ninguna, lo escribes y lo hacemos."
           />
           <a
-            href={whatsappLink("Hola Mandao, ¿qué comercios tienen disponibles hoy?")}
+            href={whatsappLink("Hola Mandaíto, ¿qué comercios tienen disponibles hoy?")}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex w-fit items-center gap-2 text-[15px] font-extrabold text-morro hover:text-morro-dark"

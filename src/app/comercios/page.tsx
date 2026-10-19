@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Para comercios",
-  description: `Vende a domicilio en ${site.city} sin comprar una moto. Mandao publica tu catálogo, trae los pedidos y te paga diario.`,
+  description: `Vende a domicilio en ${site.city} sin comprar una moto. Mandaíto publica tu catálogo, trae los pedidos y te paga diario.`,
 };
 
 const terms = [
@@ -34,7 +34,7 @@ export default function MerchantsPage() {
             sin comprar una moto
           </>
         }
-        body="Publicamos tu catálogo, te traemos los pedidos y un rider uniformado los recoge en tu puerta. Tú cocinas o despachas; Mandao hace el resto y te paga diario."
+        body="Publicamos tu catálogo, te traemos los pedidos y un rider uniformado los recoge en tu puerta. Tú cocinas o despachas; Mandaíto hace el resto y te paga diario."
         aside={
           <Reveal delay={0.1}>
             <div className="rounded-[28px] bg-ink p-7 text-cream">
@@ -54,7 +54,7 @@ export default function MerchantsPage() {
 
       <section className="bg-sand py-16 lg:py-20">
         <Container className="flex flex-col gap-10">
-          <SectionHeading title="Por qué vender por Mandao" />
+          <SectionHeading title="Por qué vender por Mandaíto" />
           <BenefitsGrid items={merchantBenefits} icon={Store} />
         </Container>
       </section>

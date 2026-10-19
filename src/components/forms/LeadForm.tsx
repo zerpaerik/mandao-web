@@ -42,7 +42,7 @@ export function LeadForm({ kind }: { kind: LeadKind }) {
   const [state, action, pending] = useActionState(submitLead, initialState);
   const errors = state.errors ?? {};
   const whatsapp = whatsappLink(
-    kind === "comercio" ? "Hola Mandao, quiero registrar mi comercio." : "Hola Mandao, quiero ser rider.",
+    kind === "comercio" ? "Hola Mandaíto, quiero registrar mi comercio." : "Hola Mandaíto, quiero ser rider.",
   );
 
   return (
@@ -148,7 +148,7 @@ export function LeadForm({ kind }: { kind: LeadKind }) {
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
               <Button type="submit" size="lg" disabled={pending} className={cn(pending && "opacity-70")}>
-                {pending ? "Enviando…" : kind === "comercio" ? "Quiero vender por Mandao" : "Quiero ser rider"}
+                {pending ? "Enviando…" : kind === "comercio" ? "Quiero vender por Mandaíto" : "Quiero ser rider"}
               </Button>
               <a
                 href={whatsapp}
@@ -160,7 +160,7 @@ export function LeadForm({ kind }: { kind: LeadKind }) {
               </a>
             </div>
             <p className="text-[12px] font-bold text-ink-muted">
-              Solo usamos tus datos para contactarte sobre Mandao. Nada de spam.
+              Solo usamos tus datos para contactarte sobre Mandaíto. Nada de spam.
             </p>
           </motion.form>
         )}

@@ -10,8 +10,8 @@ export default function TermsPage() {
       intro="Este texto es un borrador de trabajo y debe ser revisado por un abogado antes del lanzamiento."
       sections={[
         {
-          heading: "Qué es Mandao",
-          body: "Mandao es una plataforma tecnológica que conecta clientes, comercios y repartidores de un operador de flota aliado en San Juan de los Morros. Mandao no prepara los productos ni realiza el transporte directamente.",
+          heading: "Qué es Mandaíto",
+          body: "Mandaíto es una plataforma tecnológica que conecta clientes, comercios y repartidores de un operador de flota aliado en San Juan de los Morros. Mandaíto no prepara los productos ni realiza el transporte directamente.",
         },
         {
           heading: "Pedidos y pagos",

@@ -7,12 +7,12 @@ interface LogoProps {
   size?: "md" | "lg";
 }
 
-/** Wordmark: "mandao" with the accented "d". */
+/** Wordmark: "mandaíto" with the accented "í" in brand orange. */
 export function Logo({ className, tone = "light", size = "md" }: LogoProps) {
   return (
     <Link
       href="/"
-      aria-label="Mandao, inicio"
+      aria-label="Mandaíto, inicio"
       className={cn(
         "inline-flex items-center gap-2.5 font-black tracking-tight",
         size === "lg" ? "text-3xl" : "text-2xl",
@@ -30,7 +30,7 @@ export function Logo({ className, tone = "light", size = "md" }: LogoProps) {
         m
       </span>
       <span>
-        man<span className="text-mandao">d</span>ao
+        manda<span className="text-mandao">í</span>to
       </span>
     </Link>
   );

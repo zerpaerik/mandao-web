@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Para riders",
-  description: `Trabaja como rider de Mandao en ${site.city}: pedidos por la app, tope de efectivo para tu seguridad y pago semanal garantizado.`,
+  description: `Trabaja como rider de Mandaíto en ${site.city}: pedidos por la app, tope de efectivo para tu seguridad y pago semanal garantizado.`,
 };
 
 const requirements = [
@@ -34,7 +34,7 @@ export default function RidersPage() {
             Nosotros te respaldamos.
           </>
         }
-        body="Trabajas con nuestro operador aliado en San Juan: chaleco y bolso Mandao, pedidos por la app con la ruta y el cobro claros, y tu semana pagada cada lunes."
+        body="Trabajas con nuestro operador aliado en San Juan: chaleco y bolso Mandaíto, pedidos por la app con la ruta y el cobro claros, y tu semana pagada cada lunes."
         aside={
           <Reveal delay={0.1}>
             <div className="rounded-[28px] bg-morro p-7 text-cream">
@@ -53,7 +53,7 @@ export default function RidersPage() {
 
       <section className="bg-sand py-16 lg:py-20">
         <Container className="flex flex-col gap-10">
-          <SectionHeading title="Cómo es trabajar con Mandao" />
+          <SectionHeading title="Cómo es trabajar con Mandaíto" />
           <BenefitsGrid items={riderBenefits} icon={Bike} tone="morro" />
         </Container>
       </section>

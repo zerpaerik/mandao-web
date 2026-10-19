@@ -34,7 +34,7 @@ export const steps: Step[] = [
   },
   {
     title: "Llegó",
-    body: "Recibes en la puerta. Si algo salió mal, hablas con una persona de Mandao, no con un robot.",
+    body: "Recibes en la puerta. Si algo salió mal, hablas con una persona de Mandaíto, no con un robot.",
     icon: Bike,
   },
 ];
@@ -118,7 +118,7 @@ export const faqs: Faq[] = [
   {
     question: "¿Quiénes son los riders?",
     answer:
-      "Motorizados de San Juan que trabajan con nuestro operador aliado: uniformados con chaleco Mandao, con documentos al día y un número visible para que sepas quién te atiende.",
+      "Motorizados de San Juan que trabajan con nuestro operador aliado: uniformados con chaleco Mandaíto, con documentos al día y un número visible para que sepas quién te atiende.",
   },
 ];
 
@@ -156,6 +156,6 @@ export const riderBenefits = [
   },
   {
     title: "Chaleco, bolso y respaldo",
-    body: "Mandao te da el uniforme y soporte por WhatsApp mientras trabajas. Tú pones la moto y las ganas.",
+    body: "Mandaíto te da el uniforme y soporte por WhatsApp mientras trabajas. Tú pones la moto y las ganas.",
   },
 ];

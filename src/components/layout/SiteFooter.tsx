@@ -24,7 +24,7 @@ export async function SiteFooter() {
           </div>
 
           <div className="flex flex-col gap-3">
-            <span className="text-[13px] font-extrabold uppercase tracking-wider text-ink-muted">Mandao</span>
+            <span className="text-[13px] font-extrabold uppercase tracking-wider text-ink-muted">Mandaíto</span>
             {nav.map((item) => (
               <Link key={item.href} href={item.href} className="w-fit text-[15px] font-bold text-ink hover:text-mandao">
                 {item.label}
@@ -35,7 +35,7 @@ export async function SiteFooter() {
           <div className="flex flex-col gap-3">
             <span className="text-[13px] font-extrabold uppercase tracking-wider text-ink-muted">Contacto</span>
             <a
-              href={whatsappLink("Hola Mandao, tengo una pregunta.")}
+              href={whatsappLink("Hola Mandaíto, tengo una pregunta.")}
               target="_blank"
               rel="noopener noreferrer"
               className="w-fit text-[15px] font-bold text-morro hover:text-morro-dark"

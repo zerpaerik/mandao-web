@@ -18,7 +18,7 @@ export function Partners() {
             </h2>
             <p className="text-pretty text-[16px] leading-relaxed text-cream/80">
               Publicamos tu catálogo, te traemos los pedidos y te pagamos diario. Tú cocinas o despachas; del resto se
-              encarga Mandao. Comisión del piloto: {site.pilot.commissionPercent} %, o cuota fija para negocios pequeños.
+              encarga Mandaíto. Comisión del piloto: {site.pilot.commissionPercent} %, o cuota fija para negocios pequeños.
             </p>
             <div className="mt-auto">
               <Button href="/comercios" variant="secondary" size="lg">
@@ -37,7 +37,7 @@ export function Partners() {
               Pedidos seguros y pago semanal garantizado
             </h2>
             <p className="text-pretty text-[16px] leading-relaxed text-cream/80">
-              Trabajas con nuestro operador aliado en San Juan: chaleco y bolso Mandao, pedidos por la app, tope de
+              Trabajas con nuestro operador aliado en San Juan: chaleco y bolso Mandaíto, pedidos por la app, tope de
               efectivo para tu seguridad y liquidación cada semana sin fallar.
             </p>
             <div className="mt-auto">

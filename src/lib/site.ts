@@ -3,12 +3,12 @@
  * Change values here, never inside components.
  */
 export const site = {
-  name: "Mandao",
+  name: "Mandaíto",
   tagline: "Lo pides, te llega.",
   description:
     "Comida, farmacia, abasto o ese mandao que no te da tiempo de hacer. Un rider de San Juan de los Morros te lo lleva a la puerta en menos de 40 minutos. Pagas en efectivo, Pago Móvil o Zelle.",
-  domain: "mandao.com.ve",
-  url: "https://mandao.com.ve",
+  domain: "mandaito.com.ve",
+  url: "https://mandaito.com.ve",
   city: "San Juan de los Morros",
   state: "Guárico",
   locale: "es-VE",
@@ -20,8 +20,8 @@ export const site = {
   },
 
   social: {
-    instagram: "https://instagram.com/mandao.ve",
-    tiktok: "https://tiktok.com/@mandao.ve",
+    instagram: "https://instagram.com/mandaito.ve",
+    tiktok: "https://tiktok.com/@mandaito.ve",
   },
 
   /** TODO: point to the Play Store listing once published. */
@@ -35,7 +35,7 @@ export const site = {
    * While null, the site renders an illustrated silhouette of Los Morros instead.
    */
   images: {
-    morrosPhoto: null as string | null,
+    morrosPhoto: "/images/morros.jpg" as string | null,
   },
 
   pilot: {

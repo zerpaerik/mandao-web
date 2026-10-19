@@ -52,7 +52,7 @@ export function Hero() {
             <Button href={site.app.android} size="lg">
               <Smartphone size={20} /> Descargar para Android
             </Button>
-            <Button href={whatsappLink("Hola Mandao, quiero hacer un pedido.")} variant="secondary" size="lg">
+            <Button href={whatsappLink("Hola Mandaíto, quiero hacer un pedido.")} variant="secondary" size="lg">
               <MessageCircle size={20} /> Pedir por WhatsApp
             </Button>
           </motion.div>
@@ -105,13 +105,23 @@ export function Hero() {
         </motion.div>
       </Container>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-0 h-48 opacity-[0.12] lg:h-64">
-        {site.images.morrosPhoto ? (
-          <Image src={site.images.morrosPhoto} alt="" fill className="object-cover object-bottom" priority />
-        ) : (
+      {site.images.morrosPhoto ? (
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-0 h-64 lg:h-[420px]">
+          <Image
+            src={site.images.morrosPhoto}
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover object-[center_30%]"
+            priority
+          />
+          <div className="absolute inset-0 bg-linear-to-b from-cream via-cream/80 to-cream/20" />
+        </div>
+      ) : (
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-0 h-48 opacity-[0.12] lg:h-64">
           <Morros />
-        )}
-      </div>
+        </div>
+      )}
     </section>
   );
 }
