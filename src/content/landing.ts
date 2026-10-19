@@ -159,3 +159,47 @@ export const riderBenefits = [
     body: "Mandaíto te da el uniforme y soporte por WhatsApp mientras trabajas. Tú pones la moto y las ganas.",
   },
 ];
+
+/** Short promotional lines for the moving strip under the hero. Edit freely; keep them under ~45 characters. */
+export const promoLines = [
+  "Envío a $1 en el centro durante el piloto",
+  "Entrega en menos de 40 minutos",
+  "Pagas en efectivo, Pago Móvil o Zelle",
+  "El rider lleva tu vuelto exacto",
+  "Mandados: una cola, un documento, lo que sea",
+  "Comercios de San Juan, riders de San Juan",
+] as const;
+
+export interface Merchant {
+  name: string;
+  category: string;
+  zone: string;
+  initials: string;
+  tone: "mandao" | "morro" | "sun" | "ink" | "coral";
+  badge?: string;
+}
+
+/**
+ * Merchants shown in the "ya están en Mandaíto" strip.
+ * EXAMPLE DATA: replace with the real partners before launch (the design canvas uses the same names).
+ */
+export const featuredMerchants: Merchant[] = [
+  { name: "Burger La Esquina", category: "Hamburguesas", zone: "Av. Bolívar", initials: "BE", tone: "mandao", badge: "Top ventas" },
+  { name: "Farmacia San Juan", category: "Farmacia", zone: "Centro", initials: "FS", tone: "morro" },
+  { name: "Abasto Los Morros", category: "Abasto y charcutería", zone: "Urb. La Morera", initials: "AM", tone: "sun" },
+  { name: "Pizzería Don Cheo", category: "Pizzas", zone: "Urb. Rómulo Gallegos", initials: "DC", tone: "coral", badge: "Nuevo" },
+  { name: "Panadería La Espiga", category: "Panadería", zone: "Centro", initials: "LE", tone: "sun" },
+  { name: "Pollos El Guariqueño", category: "Pollo a la brasa", zone: "Los Laureles", initials: "PG", tone: "mandao" },
+  { name: "Licorería El Morro", category: "Licorería", zone: "Las Palmas", initials: "LM", tone: "ink" },
+  { name: "Sushi Llanero", category: "Sushi", zone: "Centro", initials: "SL", tone: "morro", badge: "Nuevo" },
+];
+
+/** The paid spotlight. One per week; sold to merchants from the pilot's month 4 on. */
+export const sponsoredSpot = {
+  label: "Espacio patrocinado",
+  merchant: "Burger La Esquina",
+  headline: "2 × 1 en Combo Esquina los martes",
+  body: "Pide dos combos por el precio de uno, solo por Mandaíto. Válido en el centro y las urbanizaciones.",
+  cta: "Pedir ahora",
+  validity: "Martes de octubre · hasta agotar 50 combos",
+} as const;

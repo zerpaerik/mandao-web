@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export function HowItWorks() {
   return (
-    <section id="como-funciona" className="relative scroll-mt-24 overflow-hidden bg-morro py-20 text-cream lg:py-28">
+    <section id="como-funciona" className="relative scroll-mt-24 overflow-hidden bg-morro pb-20 pt-28 text-cream lg:pb-28 lg:pt-36">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -right-32 -top-32 h-[420px] w-[420px] rounded-full bg-morro-dark/60"

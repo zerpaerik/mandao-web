@@ -115,7 +115,7 @@ export function Hero() {
             className="object-cover object-[center_30%]"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-b from-cream via-cream/80 to-cream/20" />
+          <div className="absolute inset-0 bg-linear-to-b from-cream via-cream/75 to-morro/40" />
         </div>
       ) : (
         <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-0 h-48 opacity-[0.12] lg:h-64">
