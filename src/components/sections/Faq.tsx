@@ -13,11 +13,11 @@ export function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="preguntas" className="scroll-mt-24 bg-white py-20 lg:py-28">
+    <section id="preguntas" className="scroll-mt-24 py-20 lg:py-28">
       <Container className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <SectionHeading eyebrow="Preguntas frecuentes" title="Lo que todos preguntan antes del primer pedido" />
         <Reveal delay={0.1}>
-          <ul className="flex flex-col divide-y divide-line rounded-3xl border border-line bg-cream">
+          <ul className="flex flex-col divide-y divide-line rounded-3xl border border-line bg-white shadow-card">
             {faqs.map((faq, i) => {
               const isOpen = open === i;
               const panelId = `faq-panel-${i}`;
@@ -33,7 +33,7 @@ export function Faq() {
                     <span className="text-[17px] font-extrabold">{faq.question}</span>
                     <span
                       className={cn(
-                        "grid h-9 w-9 flex-none place-items-center rounded-full bg-white text-ink transition-transform duration-300",
+                        "grid h-9 w-9 flex-none place-items-center rounded-full bg-sand text-ink transition-transform duration-300",
                         isOpen && "rotate-45 bg-mandao text-cream",
                       )}
                     >

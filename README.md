@@ -19,7 +19,7 @@ pnpm lint       # ESLint
 src/
 ├── app/                    Rutas (App Router)
 │   ├── layout.tsx          Fuente Nunito, metadatos, header y footer
-│   ├── page.tsx            Landing: hero, cómo funciona, categorías, aliados, cobertura, preguntas, CTA
+│   ├── page.tsx            Landing: hero, franja promo, cómo funciona, cifras del piloto, categorías, comercios, cobertura, preguntas, CTA
 │   ├── comercios/          Página y formulario para comercios
 │   ├── riders/             Página y formulario para riders
 │   ├── terminos/ privacidad/   Borradores legales (pendientes de abogado)
@@ -31,8 +31,8 @@ src/
 │   ├── layout/             SiteHeader (sticky, blur al hacer scroll, menú móvil) y SiteFooter
 │   ├── sections/           Una sección de página por archivo
 │   ├── forms/              LeadForm (useActionState + server action)
-│   ├── illustrations/      Silueta de Los Morros y tarjeta animada de seguimiento
-│   └── ui/                 Button, Container, Logo, SectionHeading, Reveal/Stagger, Counter
+│   ├── illustrations/      Silueta de Los Morros (respaldo cuando no hay foto)
+│   └── ui/                 Button, Container, Logo, PhoneFrame, SectionHeading, Reveal/Stagger, Counter
 ├── content/
 │   └── landing.ts          Todos los textos de la landing en un solo lugar
 └── lib/
@@ -41,6 +41,10 @@ src/
 ```
 
 Regla simple: **los textos viven en `src/content`, los datos de la marca en `src/lib/site.ts`**. Los componentes no llevan texto ni números fijos.
+
+Interruptores en `src/content/landing.ts`: `pilotStats.enabled` muestra la fila de cifras reales del piloto; `sponsoredSpot.enabled` muestra la tarjeta de espacio patrocinado. Ambos arrancan en `false`.
+
+Las capturas de la app en `public/images/screens/` (inicio, pago, seguimiento) se generan desde el lienzo de diseño; al cambiar el diseño, regenerarlas y reemplazarlas.
 
 ## Pendientes antes de publicar
 

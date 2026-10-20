@@ -196,6 +196,8 @@ export const featuredMerchants: Merchant[] = [
 
 /** The paid spotlight. One per week; sold to merchants from the pilot's month 4 on. */
 export const sponsoredSpot = {
+  /** Set to true once a real merchant has bought the weekly spot. */
+  enabled: false,
   label: "Espacio patrocinado",
   merchant: "Burger La Esquina",
   headline: "2 × 1 en Combo Esquina los martes",
@@ -203,3 +205,25 @@ export const sponsoredSpot = {
   cta: "Pedir ahora",
   validity: "Martes de octubre · hasta agotar 50 combos",
 } as const;
+
+export interface PilotStat {
+  label: string;
+  value: number;
+  prefix?: string;
+  suffix?: string;
+}
+
+/**
+ * Honest figures from the pilot, shown under the hero once there is something real to show.
+ * Keep `enabled` false until the first week of operation; update the numbers weekly by hand.
+ */
+export const pilotStats = {
+  enabled: false,
+  updatedLabel: "Actualizado el [FECHA]",
+  items: [
+    { label: "Comercios activos", value: 0 },
+    { label: "Pedidos entregados", value: 0 },
+    { label: "Tiempo promedio de entrega", value: 0, suffix: " min" },
+    { label: "Riders en turno", value: 0 },
+  ] as PilotStat[],
+};

@@ -4,10 +4,10 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { MessageCircle, Smartphone } from "lucide-react";
 import { Morros } from "@/components/illustrations/Morros";
-import { OrderTrackingCard } from "@/components/illustrations/OrderTrackingCard";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Counter } from "@/components/ui/Counter";
+import { PhoneFrame } from "@/components/ui/PhoneFrame";
 import { paymentMethods } from "@/content/landing";
 import { site, whatsappLink } from "@/lib/site";
 
@@ -21,7 +21,7 @@ const fade = (delay: number) => ({
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <Container className="grid items-center gap-12 pb-20 pt-10 lg:grid-cols-[1.1fr_0.9fr] lg:pb-28 lg:pt-16">
+      <Container className="grid items-center gap-12 pb-24 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:pb-32 lg:pt-16">
         <div className="relative z-10 flex flex-col gap-7">
           <motion.span
             {...fade(0)}
@@ -88,18 +88,24 @@ export function Hero() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 40, rotate: -2 }}
-          animate={{ opacity: 1, y: 0, rotate: 0 }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.25, ease }}
           className="relative z-10 flex justify-center lg:justify-end"
         >
-          <div className="relative">
-            <div className="absolute -inset-3 -z-10 rounded-[40px] bg-mandao/90 sm:-inset-6" />
-            <div className="absolute inset-x-0 -bottom-6 -z-10 h-40 overflow-hidden rounded-b-[40px]">
-              <Morros tone="green" />
-            </div>
-            <div className="animate-float">
-              <OrderTrackingCard />
+          <div className="relative h-[560px] w-[360px] sm:h-[620px] sm:w-[420px]">
+            <div aria-hidden="true" className="absolute left-1/2 top-1/2 h-[380px] w-[380px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-mandao/90 sm:h-[440px] sm:w-[440px]" />
+            <PhoneFrame
+              src="/images/screens/seguimiento.png"
+              alt="Pantalla de seguimiento: el rider va en camino con el vuelto listo"
+              className="absolute right-0 top-6 w-[200px] rotate-[8deg] opacity-95 sm:w-[230px]"
+            />
+            <div className="absolute bottom-0 left-0 w-[250px] animate-float sm:w-[290px]">
+              <PhoneFrame
+                src="/images/screens/inicio.png"
+                alt="Pantalla de inicio de la app Mandaíto con categorías y comercios cercanos"
+                priority
+              />
             </div>
           </div>
         </motion.div>
