@@ -72,7 +72,7 @@ export const categories: Category[] = [
   {
     slug: "mandados",
     title: "Mandados",
-    body: "Una cola, un documento, lo que no está en catálogo.",
+    body: "Escríbelo y lo hacemos: una cola, un documento, lo que no está en catálogo.",
     icon: CreditCard,
     tone: "ink",
   },
@@ -95,6 +95,11 @@ export interface Faq {
 }
 
 export const faqs: Faq[] = [
+  {
+    question: "¿Tengo que buscar comercio por comercio?",
+    answer:
+      "No. Escribes o dictas lo que necesitas en una frase, como se lo dirías a un amigo, y Mandaíto arma el pedido con los comercios y precios de hoy. Tú revisas, corriges si quieres y tocas Pedir.",
+  },
   {
     question: "¿Cuánto cuesta el envío?",
     answer:
@@ -123,6 +128,10 @@ export const faqs: Faq[] = [
 ];
 
 export const merchantBenefits = [
+  {
+    title: "Te encuentran aunque no sepan tu nombre",
+    body: "Cuando alguien escribe \"dos hamburguesas dobles\", Mandaíto busca en tu catálogo y te propone. Vendes por lo que tienes, no solo por tu marca.",
+  },
   {
     title: "Vende a domicilio sin comprar una moto",
     body: "Publicamos tu catálogo, te traemos los pedidos y un rider los recoge. Tú cocinas o despachas.",
@@ -163,6 +172,7 @@ export const riderBenefits = [
 /** Short promotional lines for the moving strip under the hero. Edit freely; keep them under ~45 characters. */
 export const promoLines = [
   "Envío a $1 en el centro durante el piloto",
+  "Escríbelo como lo dirías, nosotros lo armamos",
   "Entrega en menos de 40 minutos",
   "Pagas en efectivo, Pago Móvil o Zelle",
   "El rider lleva tu vuelto exacto",

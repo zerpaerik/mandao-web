@@ -44,8 +44,8 @@ export function Hero() {
           </motion.h1>
 
           <motion.p {...fade(0.16)} className="max-w-xl text-pretty text-[19px] leading-relaxed text-ink-soft sm:text-[21px]">
-            Comida, farmacia, abasto o ese mandao que no te da tiempo de hacer. Un rider de San Juan te lo lleva a la
-            puerta en menos de {site.pilot.maxMinutes} minutos. Pagas como quieras.
+            Escríbelo como lo dirías: comida, farmacia, abasto o ese mandao que no te da tiempo de hacer. Mandaíto
+            arma el pedido y un rider de San Juan te lo lleva en menos de {site.pilot.maxMinutes} minutos.
           </motion.p>
 
           <motion.div {...fade(0.24)} className="flex flex-wrap gap-3">
@@ -96,14 +96,14 @@ export function Hero() {
           <div className="relative h-[560px] w-[360px] sm:h-[620px] sm:w-[420px]">
             <div aria-hidden="true" className="absolute left-1/2 top-1/2 h-[380px] w-[380px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-mandao/90 sm:h-[440px] sm:w-[440px]" />
             <PhoneFrame
-              src="/images/screens/seguimiento.png"
-              alt="Pantalla de seguimiento: el rider va en camino con el vuelto listo"
+              src="/images/screens/inicio.png"
+              alt="Pantalla de inicio de la app Mandaíto con categorías y comercios cercanos"
               className="absolute right-0 top-6 w-[200px] rotate-[8deg] opacity-95 sm:w-[230px]"
             />
             <div className="absolute bottom-0 left-0 w-[250px] animate-float sm:w-[290px]">
               <PhoneFrame
-                src="/images/screens/inicio.png"
-                alt="Pantalla de inicio de la app Mandaíto con categorías y comercios cercanos"
+                src="/images/screens/asistente.png"
+                alt="Pantalla del asistente: una frase se convierte en un carrito con precios y vuelto"
                 priority
               />
             </div>

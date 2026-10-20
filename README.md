@@ -19,7 +19,7 @@ pnpm lint       # ESLint
 src/
 ├── app/                    Rutas (App Router)
 │   ├── layout.tsx          Fuente Nunito, metadatos, header y footer
-│   ├── page.tsx            Landing: hero, franja promo, cómo funciona, cifras del piloto, categorías, comercios, cobertura, preguntas, CTA
+│   ├── page.tsx            Landing: hero, franja promo, cómo funciona, demo "Pídelo en una frase", cifras del piloto, categorías, comercios, cobertura, preguntas, CTA
 │   ├── comercios/          Página y formulario para comercios
 │   ├── riders/             Página y formulario para riders
 │   ├── terminos/ privacidad/   Borradores legales (pendientes de abogado)
@@ -34,7 +34,8 @@ src/
 │   ├── illustrations/      Silueta de Los Morros (respaldo cuando no hay foto)
 │   └── ui/                 Button, Container, Logo, PhoneFrame, SectionHeading, Reveal/Stagger, Counter
 ├── content/
-│   └── landing.ts          Todos los textos de la landing en un solo lugar
+│   ├── landing.ts          Todos los textos de la landing en un solo lugar
+│   └── demo.ts             Escenarios simulados de la demo "Pídelo en una frase"
 └── lib/
     ├── site.ts             Marca, contacto, enlaces, parámetros del piloto
     └── utils.ts            cn(), formatUsd()
